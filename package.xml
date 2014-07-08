@@ -1,0 +1,20 @@
+<package>
+  <name>knowrob_data</name>
+  <version>0.1.0</version>
+  <description>Repository for data related to the KnowRob knowledge base, such as maps, robot log data or object models.</description>
+  <maintainer email="tenorth@cs.uni-bremen.de">Moritz Tenorth</maintainer>
+
+  <license>Creative Commons</license>
+
+  <url type="website">http://ros.org/wiki/knowrob_data</url>
+  <url type="bugtracker">https://github.com/knowrob/knowrob_data/issues</url>
+
+  <author>Moritz Tenorth</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>knowrob_common</build_depend>
+
+  <run_depend>knowrob_common</run_depend>
+
+</package>
