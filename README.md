@@ -9,7 +9,7 @@ from code (e.g. not in the main KnowRob repository) in order to allow the
 re-use of programs in different contexts.
 
 The subfolders contain the following kinds of data:
-* **actions:** OWL files with task descriptions, similar to the "action recipes" in RoboEart
+* **actions:** OWL files with task descriptions, similar to the "action recipes" in RoboEarth
 * **logs:** Log files of task executions, either by robots or humans
 * **maps:** Semantic environment maps
 * **objects:** Object models, i.e. OWL files describing their semantic properties, composition from parts, or links to CAD models
