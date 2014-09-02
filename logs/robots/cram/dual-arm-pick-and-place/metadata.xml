@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<meta-data>
+  <cram-beliefstate-version>0.4</cram-beliefstate-version>
+  <creator>IAI</creator>
+  <description>The PR2 picked up a milk box from a kitchen counter with one gripper, and placed it onto a table. Then, it went back to the counter, picked up a bowl with two grippers, and placed it onto the same table. Putting down was difficult in the beginning, but eventually succeeded.</description>
+  <experiment>Table Setting</experiment>
+  <experiment-name>exp-2014-09-02_15-12-03</experiment-name>
+  <owl-exporter-version>0.93</owl-exporter-version>
+  <robot>PR2</robot>
+  <time-end>1409664334</time-end>
+  <time-start>1409663523</time-start>
+</meta-data>
