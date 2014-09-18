@@ -7,6 +7,7 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY log "http://ias.cs.tum.edu/kb/cram_log.owl#" >
+    <!ENTITY sim 'http://ias.cs.tum.edu/kb/knowrob_sim.owl#'>
 ]>
 
 <rdf:RDF xmlns="http://ias.cs.tum.edu/kb/cram_log.owl#"
@@ -16,7 +17,8 @@
      xmlns:knowrob="http://ias.cs.tum.edu/kb/knowrob.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:log="http://ias.cs.tum.edu/kb/cram_log.owl#">
+     xmlns:log="http://ias.cs.tum.edu/kb/cram_log.owl#"
+     xmlns:sim="http://ias.cs.tum.edu/kb/knowrob_sim.owl#">
 
     <owl:Ontology rdf:about="http://ias.cs.tum.edu/kb/cram_log.owl">
         <owl:imports rdf:resource="knowrob.owl"/>
