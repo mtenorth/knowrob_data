@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY knowrob "http://ias.cs.tum.edu/kb/knowrob.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY log "http://ias.cs.tum.edu/kb/cram_log.owl#" >
+]>
+
+<rdf:RDF xmlns="http://ias.cs.tum.edu/kb/cram_log.owl#"
+     xml:base="http://ias.cs.tum.edu/kb/cram_log.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:knowrob="http://ias.cs.tum.edu/kb/knowrob.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:log="http://ias.cs.tum.edu/kb/cram_log.owl#">
+
+    <owl:Ontology rdf:about="http://ias.cs.tum.edu/kb/cram_log.owl">
+        <owl:imports rdf:resource="knowrob.owl"/>
+    </owl:Ontology>
+
+    <!-- Property Definitions -->
+
+    <owl:ObjectProperty rdf:about="&knowrob;startTime"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;endTime"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;previousAction"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;nextAction"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;subAction"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;detectedObject"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;objectActedOn"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;eventFailure"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;designator"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;equationTime"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;successorDesignator"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;taskContext"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;goalContext"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;capturedImage"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;rosTopic"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;linkToImageFile"/>
+
+    <!-- Class Definitions -->
+
+    <owl:Class rdf:about="&sim;ObjectsInContact2"/>
+
+    <owl:Class rdf:about="&sim;ObjectsInContact"/>
+
+    <owl:Class rdf:about="&knowrob;TimePoint"/>
+
+    <!-- Event Individuals -->
+
+    <owl:namedIndividual rdf:about="&log;ObjectsInContact2_ntsEAKqS">
+        <rdf:type rdf:resource="&sim;ObjectsInContact2"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">Contact</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_2000"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_2500"/>
+        <knowrob:objectInContact rdf:resource="&sim;Cup_ntsEAKot"/>
+        <knowrob:objectInContact rdf:resource="&sim;Table_ntsEAKqS"/>
+    </owl:namedIndividual>
+
+    <owl:namedIndividual rdf:about="&log;ObjectsInContact_ryq4xWot">
+        <rdf:type rdf:resource="&sim;ObjectsInContact"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">Contact</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1000"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_2500"/>
+        <knowrob:subAction rdf:resource="&log;ObjectsInContact2_ntsEAKqS"/>
+        <knowrob:objectInContact rdf:resource="&sim;Cup_ntsEAKot"/>
+        <knowrob:objectInContact rdf:resource="&sim;Table_ntsEAKot"/>
+    </owl:namedIndividual>
+
+    <!-- Object Individuals -->
+
+    <owl:namedIndividual rdf:about="&sim;Cup_ntsEAKot">
+        <rdf:type rdf:resource="&sim;Cup"/>
+    </owl:namedIndividual>
+
+    <owl:namedIndividual rdf:about="&sim;Cup_ntsEAKot">
+        <rdf:type rdf:resource="&sim;Table"/>
+    </owl:namedIndividual>
+    <!-- Image Individuals -->
+
+    <!-- Designator Individuals -->
+
+    <!-- Failure Individuals -->
+
+    <!-- Timepoint Individuals -->
+
+    <owl:namedIndividual rdf:about="&log;timepoint_2000">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:namedIndividual>
+
+    <owl:namedIndividual rdf:about="&log;timepoint_2500">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:namedIndividual>
+
+    <owl:namedIndividual rdf:about="&log;timepoint_1000">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:namedIndividual>
+
+    <!-- Meta Data Individual -->
+
+    <owl:namedIndividual rdf:about="&log;ExperimentMetaData_zKKGgvs2">
+        <rdf:type rdf:resource="&knowrob;ExperimentMetaData"/>
+        <knowrob:subAction rdf:resource="&log;ObjectsInContact_ryq4xWot"/>
+        <knowrob:experimentName rdf:datatype="&xsd;string">exp-2014-09-11_13-18-40</knowrob:experimentName>
+        <knowrob:owlExporterVersion rdf:datatype="&xsd;string">0.93</knowrob:owlExporterVersion>
+        <knowrob:timeEnd rdf:datatype="&xsd;string">1410434324</knowrob:timeEnd>
+        <knowrob:timeStart rdf:datatype="&xsd;string">1410434320</knowrob:timeStart>
+    </owl:namedIndividual>
+
+    <!-- Parameter Annotation Information Individual -->
+
+    <owl:namedIndividual rdf:about="&log;AnnotationInformation_GARd9yL8">
+        <rdf:type rdf:resource="&knowrob;AnnotationInformation"/>
+    </owl:namedIndividual>
+
+</rdf:RDF>
