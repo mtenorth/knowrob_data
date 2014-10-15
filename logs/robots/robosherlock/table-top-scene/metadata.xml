@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<meta-data>
+  <cram-beliefstate-version>0.4</cram-beliefstate-version>
+  <creator>IAI</creator>
+  <experiment>RoboSherlock Experiments</experiment>
+  <experiment-name>exp-2014-10-15_17-28-22</experiment-name>
+  <owl-exporter-version>0.93</owl-exporter-version>
+  <robot>PR2</robot>
+  <time-end>1413387362</time-end>
+  <time-start>1413386902</time-start>
+</meta-data>
