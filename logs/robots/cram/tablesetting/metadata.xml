@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<meta-data>
+  <cram-beliefstate-version>0.4</cram-beliefstate-version>
+  <creator>IAI</creator>
+  <description>The PR2 set the table for breakfast for one person.</description>
+  <experiment>Tablesetting</experiment>
+  <experiment-name>exp-2014-11-16_16-00-09</experiment-name>
+  <owl-exporter-version>0.93</owl-exporter-version>
+  <robot>PR2</robot>
+  <time-end>1416151701</time-end>
+  <time-start>1416150010</time-start>
+</meta-data>
