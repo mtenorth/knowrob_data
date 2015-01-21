@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY log "http://knowrob.org/kb/cram_log.owl#" >
+    <!ENTITY knowrob_sim "http://knowrob.org/kb/knowrob_sim.owl#" >
+]>
+
+<rdf:RDF xmlns="http://knowrob.org/kb/cram_log.owl#"
+     xml:base="http://knowrob.org/kb/cram_log.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:log="http://knowrob.org/kb/cram_log.owl#"
+     xmlns:knowrob_sim="http://knowrob.org/kb/knowrob_sim.owl#">
+
+    <owl:Ontology rdf:about="http://knowrob.org/kb/cram_log.owl">
+        <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
+    </owl:Ontology>
+
+    <!-- Property Definitions -->
+
+    <owl:ObjectProperty rdf:about="&knowrob;taskContext"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;taskSuccess"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;startTime"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;endTime"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;nextAction"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob_sim;inContact"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;previousAction"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;objectActedOn"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;designator"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;subAction"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;experiment"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;experimentName"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;owlExporterVersion"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;timeEnd"/>
+
+    <owl:ObjectProperty rdf:about="&knowrob;timeStart"/>
+
+    <!-- Class Definitions -->
+
+    <owl:Class rdf:about="&knowrob_sim;TouchingSituation"/>
+
+    <owl:Class rdf:about="&knowrob;FluidFlow-Translation"/>
+
+    <owl:Class rdf:about="&knowrob;GraspingSomething"/>
+
+    <owl:Class rdf:about="&knowrob_sim;PancakeEpisode"/>
+
+    <owl:Class rdf:about="&knowrob;KitchenTable"/>
+
+    <owl:Class rdf:about="&knowrob;Cup"/>
+
+    <owl:Class rdf:about="&knowrob;Hand"/>
+
+    <owl:Class rdf:about="&knowrob;PancakeMaker"/>
+
+    <owl:Class rdf:about="&knowrob;Spatula"/>
+
+    <owl:Class rdf:about="&knowrob;LiquidTangibleThing"/>
+
+    <owl:Class rdf:about="&knowrob;CRAMDesignator"/>
+
+    <owl:Class rdf:about="&knowrob;TimePoint"/>
+
+    <owl:Class rdf:about="&knowrob;RobotExperiment"/>
+
+    <owl:Class rdf:about="&knowrob;AnnotationInformation"/>
+
+    <!-- Event Individuals -->
+
+    <owl:NamedIndividual rdf:about="&log;TouchingSituation_xSOdfPIP8M3cIdGi">
+        <rdf:type rdf:resource="&knowrob_sim;TouchingSituation"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">ContactKitchenTableCup</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1504.466"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1507.812"/>
+        <knowrob:nextAction rdf:resource="&log;TouchingSituation_vZSp0JX6f7p3LDH7"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;KitchenTable_object_JZwiNp10OIVHtw"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;Cup_object_HQG5epyOUtY0Iz"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;TouchingSituation_vZSp0JX6f7p3LDH7">
+        <rdf:type rdf:resource="&knowrob_sim;TouchingSituation"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">ContactKitchenTableCup</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1514.483"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1527.151"/>
+        <knowrob:previousAction rdf:resource="&log;TouchingSituation_xSOdfPIP8M3cIdGi"/>
+        <knowrob:nextAction rdf:resource="&log;TouchingSituation_2fUCiqmMyNcIuOEL"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;KitchenTable_object_JZwiNp10OIVHtw"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;Cup_object_HQG5epyOUtY0Iz"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;TouchingSituation_2fUCiqmMyNcIuOEL">
+        <rdf:type rdf:resource="&knowrob_sim;TouchingSituation"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">ContactKitchenTableHand</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1507.152"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1507.804"/>
+        <knowrob:previousAction rdf:resource="&log;TouchingSituation_vZSp0JX6f7p3LDH7"/>
+        <knowrob:nextAction rdf:resource="&log;TouchingSituation_VR9E0PXhiSCLBkY7"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;KitchenTable_object_JZwiNp10OIVHtw"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;Hand_object_TOX2sMVnwCeoxO"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;TouchingSituation_VR9E0PXhiSCLBkY7">
+        <rdf:type rdf:resource="&knowrob_sim;TouchingSituation"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">ContactKitchenTableHand</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1514.491"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1514.748"/>
+        <knowrob:previousAction rdf:resource="&log;TouchingSituation_2fUCiqmMyNcIuOEL"/>
+        <knowrob:nextAction rdf:resource="&log;TouchingSituation_BMBy49oI4mfZvPd7"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;KitchenTable_object_JZwiNp10OIVHtw"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;Hand_object_TOX2sMVnwCeoxO"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;TouchingSituation_BMBy49oI4mfZvPd7">
+        <rdf:type rdf:resource="&knowrob_sim;TouchingSituation"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">ContactKitchenTableHand</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1516.758"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1517.742"/>
+        <knowrob:previousAction rdf:resource="&log;TouchingSituation_VR9E0PXhiSCLBkY7"/>
+        <knowrob:nextAction rdf:resource="&log;TouchingSituation_5AZ1aWDEpokmJVyX"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;KitchenTable_object_JZwiNp10OIVHtw"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;Hand_object_TOX2sMVnwCeoxO"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;TouchingSituation_5AZ1aWDEpokmJVyX">
+        <rdf:type rdf:resource="&knowrob_sim;TouchingSituation"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">ContactKitchenTableHand</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1525.443"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1525.653"/>
+        <knowrob:previousAction rdf:resource="&log;TouchingSituation_BMBy49oI4mfZvPd7"/>
+        <knowrob:nextAction rdf:resource="&log;TouchingSituation_aYnVAKgS4LD74nDk"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;KitchenTable_object_JZwiNp10OIVHtw"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;Hand_object_TOX2sMVnwCeoxO"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;TouchingSituation_aYnVAKgS4LD74nDk">
+        <rdf:type rdf:resource="&knowrob_sim;TouchingSituation"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">ContactKitchenTablePancakeMaker</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1504.466"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1527.151"/>
+        <knowrob:previousAction rdf:resource="&log;TouchingSituation_5AZ1aWDEpokmJVyX"/>
+        <knowrob:nextAction rdf:resource="&log;TouchingSituation_1Mlp4c62hncu475t"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;KitchenTable_object_JZwiNp10OIVHtw"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;PancakeMaker_object_eROD8COOnCRCb4"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;TouchingSituation_1Mlp4c62hncu475t">
+        <rdf:type rdf:resource="&knowrob_sim;TouchingSituation"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">ContactKitchenTableSpatula</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1504.466"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1519.055"/>
+        <knowrob:previousAction rdf:resource="&log;TouchingSituation_aYnVAKgS4LD74nDk"/>
+        <knowrob:nextAction rdf:resource="&log;TouchingSituation_T6iHr1LeqKUsJjHk"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;KitchenTable_object_JZwiNp10OIVHtw"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;Spatula_object_Cut0WDOgpfv7jB"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;TouchingSituation_T6iHr1LeqKUsJjHk">
+        <rdf:type rdf:resource="&knowrob_sim;TouchingSituation"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">ContactKitchenTableSpatula</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1525.112"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1527.151"/>
+        <knowrob:previousAction rdf:resource="&log;TouchingSituation_1Mlp4c62hncu475t"/>
+        <knowrob:nextAction rdf:resource="&log;TouchingSituation_AftI1Ol6mTIG3FQL"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;KitchenTable_object_JZwiNp10OIVHtw"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;Spatula_object_Cut0WDOgpfv7jB"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;TouchingSituation_AftI1Ol6mTIG3FQL">
+        <rdf:type rdf:resource="&knowrob_sim;TouchingSituation"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">ContactPancakeMakerLiquidTangibleThing</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1510.685"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1521.978"/>
+        <knowrob:previousAction rdf:resource="&log;TouchingSituation_T6iHr1LeqKUsJjHk"/>
+        <knowrob:nextAction rdf:resource="&log;TouchingSituation_DAQmeH6ieGcvLmlo"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;PancakeMaker_object_eROD8COOnCRCb4"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;LiquidTangibleThing_object_bdn0QrAer1kDgo"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;TouchingSituation_DAQmeH6ieGcvLmlo">
+        <rdf:type rdf:resource="&knowrob_sim;TouchingSituation"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">ContactPancakeMakerLiquidTangibleThing</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1523.512"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1527.151"/>
+        <knowrob:previousAction rdf:resource="&log;TouchingSituation_AftI1Ol6mTIG3FQL"/>
+        <knowrob:nextAction rdf:resource="&log;TouchingSituation_hcJs1CCzZHwzmtqQ"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;PancakeMaker_object_eROD8COOnCRCb4"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;LiquidTangibleThing_object_bdn0QrAer1kDgo"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;TouchingSituation_hcJs1CCzZHwzmtqQ">
+        <rdf:type rdf:resource="&knowrob_sim;TouchingSituation"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">ContactPancakeMakerSpatula</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1520.193"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1521.959"/>
+        <knowrob:previousAction rdf:resource="&log;TouchingSituation_DAQmeH6ieGcvLmlo"/>
+        <knowrob:nextAction rdf:resource="&log;TouchingSituation_IFAjnFmqVi4QGthA"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;PancakeMaker_object_eROD8COOnCRCb4"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;Spatula_object_Cut0WDOgpfv7jB"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;TouchingSituation_IFAjnFmqVi4QGthA">
+        <rdf:type rdf:resource="&knowrob_sim;TouchingSituation"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">ContactSpatulaLiquidTangibleThing</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1520.843"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1523.498"/>
+        <knowrob:previousAction rdf:resource="&log;TouchingSituation_hcJs1CCzZHwzmtqQ"/>
+        <knowrob:nextAction rdf:resource="&log;FluidFlow-Translation_MJe1pD2HAI9iXaun"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;Spatula_object_Cut0WDOgpfv7jB"/>
+        <knowrob_sim:inContact rdf:resource="&knowrob;LiquidTangibleThing_object_bdn0QrAer1kDgo"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;FluidFlow-Translation_MJe1pD2HAI9iXaun">
+        <rdf:type rdf:resource="&knowrob;FluidFlow-Translation"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">FluidFlow-Translation</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1510.416"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1512.203"/>
+        <knowrob:previousAction rdf:resource="&log;TouchingSituation_IFAjnFmqVi4QGthA"/>
+        <knowrob:nextAction rdf:resource="&log;GraspingSomething_5fSGyjmRlBSGpQOD"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;GraspingSomething_5fSGyjmRlBSGpQOD">
+        <rdf:type rdf:resource="&knowrob;GraspingSomething"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">GraspCup</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1507.322"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1514.708"/>
+        <knowrob:previousAction rdf:resource="&log;FluidFlow-Translation_MJe1pD2HAI9iXaun"/>
+        <knowrob:nextAction rdf:resource="&log;GraspingSomething_ILl2yfK1Fji5c011"/>
+        <knowrob:objectActedOn rdf:resource="&knowrob;Cup_object_HQG5epyOUtY0Iz"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;GraspingSomething_ILl2yfK1Fji5c011">
+        <rdf:type rdf:resource="&knowrob;GraspingSomething"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">GraspSpatula</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1518.660"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1525.429"/>
+        <knowrob:previousAction rdf:resource="&log;GraspingSomething_5fSGyjmRlBSGpQOD"/>
+        <knowrob:nextAction rdf:resource="&log;PancakeEpisode_xH6kDAHHWFeR882j"/>
+        <knowrob:objectActedOn rdf:resource="&knowrob;Spatula_object_Cut0WDOgpfv7jB"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;PancakeEpisode_xH6kDAHHWFeR882j">
+        <rdf:type rdf:resource="&knowrob_sim;PancakeEpisode"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">Main</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&log;timepoint_1504.464"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1527.151"/>
+        <knowrob:previousAction rdf:resource="&log;GraspingSomething_ILl2yfK1Fji5c011"/>
+    </owl:NamedIndividual>
+    
+    <!-- Object Individuals -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;KitchenTable_object_JZwiNp10OIVHtw">
+        <rdf:type rdf:resource="&knowrob;KitchenTable"/>
+        <knowrob:designator rdf:resource="&log;object_JZwiNp10OIVHtw"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;Cup_object_HQG5epyOUtY0Iz">
+        <rdf:type rdf:resource="&knowrob;Cup"/>
+        <knowrob:designator rdf:resource="&log;object_HQG5epyOUtY0Iz"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;Hand_object_TOX2sMVnwCeoxO">
+        <rdf:type rdf:resource="&knowrob;Hand"/>
+        <knowrob:designator rdf:resource="&log;object_TOX2sMVnwCeoxO"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;PancakeMaker_object_eROD8COOnCRCb4">
+        <rdf:type rdf:resource="&knowrob;PancakeMaker"/>
+        <knowrob:designator rdf:resource="&log;object_eROD8COOnCRCb4"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;Spatula_object_Cut0WDOgpfv7jB">
+        <rdf:type rdf:resource="&knowrob;Spatula"/>
+        <knowrob:designator rdf:resource="&log;object_Cut0WDOgpfv7jB"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;LiquidTangibleThing_object_bdn0QrAer1kDgo">
+        <rdf:type rdf:resource="&knowrob;LiquidTangibleThing"/>
+        <knowrob:designator rdf:resource="&log;object_bdn0QrAer1kDgo"/>
+    </owl:NamedIndividual>
+    
+    <!-- Image Individuals -->
+
+    <!-- Designator Individuals -->
+
+    <owl:NamedIndividual rdf:about="&log;object_JZwiNp10OIVHtw">
+        <rdf:type rdf:resource="&knowrob;CRAMDesignator"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;object_HQG5epyOUtY0Iz">
+        <rdf:type rdf:resource="&knowrob;CRAMDesignator"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;object_TOX2sMVnwCeoxO">
+        <rdf:type rdf:resource="&knowrob;CRAMDesignator"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;object_eROD8COOnCRCb4">
+        <rdf:type rdf:resource="&knowrob;CRAMDesignator"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;object_Cut0WDOgpfv7jB">
+        <rdf:type rdf:resource="&knowrob;CRAMDesignator"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;object_bdn0QrAer1kDgo">
+        <rdf:type rdf:resource="&knowrob;CRAMDesignator"/>
+    </owl:NamedIndividual>
+    
+    <!-- Failure Individuals -->
+
+    <!-- Timepoint Individuals -->
+
+    <owl:NamedIndividual rdf:about="&log;timepoint_1504.466">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1507.812">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1514.483">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1527.151">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1507.152">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1507.804">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1514.491">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1514.748">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1516.758">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1517.742">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1525.443">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1525.653">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1519.055">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1525.112">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1510.685">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1521.978">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1523.512">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1520.193">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1521.959">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1520.843">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1523.498">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1510.416">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1512.203">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1507.322">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1514.708">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1518.660">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1525.429">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&log;timepoint_1504.464">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+    <!-- Meta Data Individual -->
+
+    <owl:NamedIndividual rdf:about="&log;RobotExperiment_pNt8hHQKbjIz0kwa">
+        <rdf:type rdf:resource="&knowrob;RobotExperiment"/>
+        <knowrob:subAction rdf:resource="&log;TouchingSituation_xSOdfPIP8M3cIdGi"/>
+        <knowrob:subAction rdf:resource="&log;TouchingSituation_vZSp0JX6f7p3LDH7"/>
+        <knowrob:subAction rdf:resource="&log;TouchingSituation_2fUCiqmMyNcIuOEL"/>
+        <knowrob:subAction rdf:resource="&log;TouchingSituation_VR9E0PXhiSCLBkY7"/>
+        <knowrob:subAction rdf:resource="&log;TouchingSituation_BMBy49oI4mfZvPd7"/>
+        <knowrob:subAction rdf:resource="&log;TouchingSituation_5AZ1aWDEpokmJVyX"/>
+        <knowrob:subAction rdf:resource="&log;TouchingSituation_aYnVAKgS4LD74nDk"/>
+        <knowrob:subAction rdf:resource="&log;TouchingSituation_1Mlp4c62hncu475t"/>
+        <knowrob:subAction rdf:resource="&log;TouchingSituation_T6iHr1LeqKUsJjHk"/>
+        <knowrob:subAction rdf:resource="&log;TouchingSituation_AftI1Ol6mTIG3FQL"/>
+        <knowrob:subAction rdf:resource="&log;TouchingSituation_DAQmeH6ieGcvLmlo"/>
+        <knowrob:subAction rdf:resource="&log;TouchingSituation_hcJs1CCzZHwzmtqQ"/>
+        <knowrob:subAction rdf:resource="&log;TouchingSituation_IFAjnFmqVi4QGthA"/>
+        <knowrob:subAction rdf:resource="&log;FluidFlow-Translation_MJe1pD2HAI9iXaun"/>
+        <knowrob:subAction rdf:resource="&log;GraspingSomething_5fSGyjmRlBSGpQOD"/>
+        <knowrob:subAction rdf:resource="&log;GraspingSomething_ILl2yfK1Fji5c011"/>
+        <knowrob:subAction rdf:resource="&log;PancakeEpisode_xH6kDAHHWFeR882j"/>
+        <knowrob:experiment rdf:datatype="&xsd;string">pf_15</knowrob:experiment>
+        <knowrob:experimentName rdf:datatype="&xsd;string">exp-2014-12-15_14-27-02</knowrob:experimentName>
+        <knowrob:owlExporterVersion rdf:datatype="&xsd;string">0.93</knowrob:owlExporterVersion>
+        <knowrob:timeEnd rdf:datatype="&xsd;string">1527.151</knowrob:timeEnd>
+        <knowrob:timeStart rdf:datatype="&xsd;string">111.603</knowrob:timeStart>
+    </owl:NamedIndividual>
+    
+    <!-- Parameter Annotation Information Individual -->
+
+    <owl:NamedIndividual rdf:about="&log;AnnotationInformation_tEccyx7trfWVf3J7">
+        <rdf:type rdf:resource="&knowrob;AnnotationInformation"/>
+    </owl:NamedIndividual>
+    
+</rdf:RDF>
