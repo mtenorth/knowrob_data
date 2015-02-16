@@ -12,6 +12,7 @@ RUN mkdir -p /home/ros/knowrob_data
 
 WORKDIR /home/ros/knowrob_data
 RUN git clone https://github.com/knowrob/knowrob_data.git .
+#ADD . /home/ros/knowrob_data/
 
 # Create knowrob_data data volume
 VOLUME /home/ros/knowrob_data

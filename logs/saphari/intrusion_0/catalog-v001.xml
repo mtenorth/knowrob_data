@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="package://knowrob_common/owl/knowrob.owl" uri="file:/home/daniel/coding/iai/docker/hydro-knowrob/hydro-knowrob-daemon_local/knowrob/knowrob/knowrob_common/owl/knowrob.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1424115657223" name="http://knowrob.org/kb/cram_log.owl" uri="cram_log.owl"/>
+    </group>
+</catalog>
