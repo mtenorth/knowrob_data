@@ -22651,9 +22651,10 @@
         <rdf:type rdf:resource="&knowrob;RobotExperiment"/>
         <knowrob:subAction rdf:resource="&log;CRAMAction_cyT9AYftUFok00Tz"/>
         <knowrob:experimentName rdf:datatype="&xsd;string">exp-2015-02-18_21-20-26</knowrob:experimentName>
+        <knowrob:performedInMap rdf:resource="http://knowrob.org/kb/saphari_map.owl#Map_SAPHARI"/>
         <knowrob:owlExporterVersion rdf:datatype="&xsd;string">0.93</knowrob:owlExporterVersion>
-        <knowrob:timeEnd rdf:datatype="&xsd;string">1424290880.948</knowrob:timeEnd>
-        <knowrob:timeStart rdf:datatype="&xsd;string">1424290831.490</knowrob:timeStart>
+        <knowrob:endTime rdf:resource="&log;timepoint_1424290880.948"/>
+        <knowrob:startTime rdf:resource="&log;timepoint_1424290831.490"/>
     </owl:NamedIndividual>
     
     <!-- Parameter Annotation Information Individual -->
