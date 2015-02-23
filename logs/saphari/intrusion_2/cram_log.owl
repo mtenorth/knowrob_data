@@ -16387,7 +16387,7 @@
         <knowrob:experimentName rdf:datatype="&xsd;string">exp-2015-02-18_21-28-40</knowrob:experimentName>
         <knowrob:performedInMap rdf:resource="http://knowrob.org/kb/saphari_map.owl#Map_SAPHARI"/>
         <knowrob:owlExporterVersion rdf:datatype="&xsd;string">0.93</knowrob:owlExporterVersion>
-        <knowrob:endTime rdf:resource="&log;timepoint_1424291329.657"/>
+        <knowrob:endTime rdf:resource="&log;timepoint_1424291374.468"/>
         <knowrob:startTime rdf:resource="&log;timepoint_1424291328.413"/>
     </owl:NamedIndividual>
     
