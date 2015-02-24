@@ -300,7 +300,7 @@
     
     <owl:NamedIndividual rdf:about="&log;CRAMAction_CN8fQdlNDDosgewa">
         <rdf:type rdf:resource="&knowrob;CRAMAction"/>
-        <knowrob:taskContext rdf:datatype="&xsd;string">LIGHT-COLLISION</knowrob:taskContext>
+        <knowrob:taskContext rdf:datatype="&xsd;string">STRONG-COLLISION</knowrob:taskContext>
         <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
         <knowrob:startTime rdf:resource="&log;timepoint_1424290842.931"/>
         <knowrob:endTime rdf:resource="&log;timepoint_1424290842.935"/>
@@ -687,7 +687,7 @@
     
     <owl:NamedIndividual rdf:about="&log;CRAMAction_3YLlBDwheVd14S1M">
         <rdf:type rdf:resource="&knowrob;CRAMAction"/>
-        <knowrob:taskContext rdf:datatype="&xsd;string">LIGHT-COLLISION</knowrob:taskContext>
+        <knowrob:taskContext rdf:datatype="&xsd;string">STRONG-COLLISION</knowrob:taskContext>
         <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
         <knowrob:startTime rdf:resource="&log;timepoint_1424290874.589"/>
         <knowrob:endTime rdf:resource="&log;timepoint_1424290874.593"/>
