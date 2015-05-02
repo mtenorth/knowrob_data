@@ -1,0 +1,1958 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY labels "http://knowrob.org/kb/labels.owl#" >
+    <!ENTITY forthhuman "http://knowrob.org/kb/forth_human.owl#" >
+    <!ENTITY map "http://knowrob.org/kb/room.owl#" >
+]>
+
+<rdf:RDF xmlns="http://knowrob.org/kb/labels.owl#"
+     xml:base="http://knowrob.org/kb/labels.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:labels="http://knowrob.org/kb/labels.owl#"
+     xmlns:forthhuman="http://knowrob.org/kb/forth_human.owl#"
+     xmlns:map="http://knowrob.org/kb/room.owl#">
+     
+    <owl:Ontology rdf:about="http://knowrob.org/kb/labels.owl#">
+        <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
+        <owl:imports rdf:resource="package://iai_semantic_maps/owl/room.owl"/>
+        <owl:imports rdf:resource="package://knowrob_srdl/owl/forth_human.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#endTime -->
+
+    <owl:ObjectProperty rdf:about="http://knowrob.org/kb/knowrob.owl#endTime"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#fromLocation -->
+
+    <owl:ObjectProperty rdf:about="http://knowrob.org/kb/knowrob.owl#fromLocation"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#nextAction -->
+
+    <owl:ObjectProperty rdf:about="http://knowrob.org/kb/knowrob.owl#nextAction"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#objectActedOn -->
+
+    <owl:ObjectProperty rdf:about="http://knowrob.org/kb/knowrob.owl#objectActedOn"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#previousAction -->
+
+    <owl:ObjectProperty rdf:about="http://knowrob.org/kb/knowrob.owl#previousAction"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#startTime -->
+
+    <owl:ObjectProperty rdf:about="http://knowrob.org/kb/knowrob.owl#startTime"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#toLocation -->
+
+    <owl:ObjectProperty rdf:about="http://knowrob.org/kb/knowrob.owl#toLocation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+    <!-- http://knowrob.org/kb/knowrob.owl#Bacon -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Bacon"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#CarryingWhileLocomoting -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#CarryingWhileLocomoting"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Cheese -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Cheese"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#ClosingSomething -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#ClosingSomething"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#GraspingSomething -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#GraspingSomething"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Onion -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Onion"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#OpeningSomething -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#OpeningSomething"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PickingUpAnObject -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#PickingUpAnObject"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Pizza -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Pizza"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PouringSomethingOnto -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#PouringSomethingOnto"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PuttingSomethingSomewhere -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#PuttingSomethingSomewhere"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#RegularOven -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#RegularOven"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Spoon-SilverwarePiece -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Spoon-SilverwarePiece"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#SpreadingOntoSurface -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#SpreadingOntoSurface"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#TakingSomething -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#TakingSomething"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#TimePoint -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#TimePoint"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Tray -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Tray"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Walking-Generic -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Walking-Generic"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#KitchenTable -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#KitchenTable"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Bowl-Serving -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Bowl-Serving"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Bowl-Generic -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Bowl-Generic"/>
+    
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Bowl-Mixing -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Bowl-Mixing"/>
+
+ 
+    <!-- http://knowrob.org/kb/knowrob.owl#Bowl-Eating -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Bowl-Eating"/>
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#TomatoSauce -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#TomatoSauce"/>
+    
+
+    <!-- http://knowrob.org/kb/knowrob.owl#LeftHand -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#LeftHand"/>
+
+    <!-- http://knowrob.org/kb/knowrob.owl#RightHand -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#RightHand"/>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#CarryingWhileLocomoting_ktJRFWi0 -->
+
+    <owl:NamedIndividual rdf:about="&labels;CarryingWhileLocomoting_ktJRFWi0">
+        <rdf:type rdf:resource="&knowrob;CarryingWhileLocomoting"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209645.066147"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209647.0378065"/>
+        <knowrob:previousAction rdf:resource="&labels;PickingUpAnObject_RX7FsHsa"/>
+        <knowrob:nextAction rdf:resource="&labels;PuttingSomethingSomewhere_KsgcJzNH"/>
+        <knowrob:toLocation rdf:resource="&map;drawer_oven_middle"/>
+        <knowrob:objectActedOn rdf:resource="&knowrob;tray_JKdma8aduNdkOM"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+    <!-- http://knowrob.org/kb/knowrob.owl#ClosingSomething_Tj3wEuvZ -->
+
+    <owl:NamedIndividual rdf:about="&labels;ClosingSomething_Tj3wEuvZ">
+        <rdf:type rdf:resource="&knowrob;ClosingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209649.5571487"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209650.9081004"/>
+        <knowrob:previousAction rdf:resource="&labels;PuttingSomethingSomewhere_KsgcJzNH"/>
+        <knowrob:objectActedOn rdf:resource="&map;drawer_oven_middle"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#GraspingSomething_6pLZ58rS -->
+
+    <owl:NamedIndividual rdf:about="&labels;GraspingSomething_6pLZ58rS">
+        <rdf:type rdf:resource="&knowrob;GraspingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209643.78822"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209644.481952"/>
+        <knowrob:nextAction rdf:resource="&labels;PickingUpAnObject_RX7FsHsa"/>
+        <knowrob:previousAction rdf:resource="&labels;Walking-Generic_Fk3Ox82j"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#GraspingSomething_NNAr5T1Y -->
+
+    <owl:NamedIndividual rdf:about="&labels;GraspingSomething_NNAr5T1Y">
+        <rdf:type rdf:resource="&knowrob;GraspingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209579.8188317"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209580.8776858"/>
+        <knowrob:nextAction rdf:resource="&labels;PickingUpAnObject_zhsiMmmw"/>
+        <knowrob:fromLocation rdf:resource="&map;kitchen_island_counter_top"/>
+        <knowrob:objectActedOn rdf:resource="&labels;spoon_Jdna8auH73bCMC"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#GraspingSomething_bKDWRzec -->
+
+    <owl:NamedIndividual rdf:about="&labels;GraspingSomething_bKDWRzec">
+        <rdf:type rdf:resource="&knowrob;GraspingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209618.339211"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209620.0187726"/>
+        <knowrob:nextAction rdf:resource="&labels;PouringSomethingOnto_5gVFNJSw"/>
+        <knowrob:previousAction rdf:resource="&labels;PuttingSomethingSomewhere_JVFHmjc0"/>
+        <knowrob:objectActedOn rdf:resource="&labels;smallRedCup1_2ecD3otVRyYGYQ"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#GraspingSomething_jgLyq11Z -->
+
+    <owl:NamedIndividual rdf:about="&labels;GraspingSomething_jgLyq11Z">
+        <rdf:type rdf:resource="&knowrob;GraspingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209631.3010447"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209632.725021"/>
+        <knowrob:nextAction rdf:resource="&labels;PickingUpAnObject_6RJ7jh99"/>
+        <knowrob:previousAction rdf:resource="&labels;PuttingSomethingSomewhere_JEAhA2UQ"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#GraspingSomething_pQGFYdwp -->
+
+    <owl:NamedIndividual rdf:about="&labels;GraspingSomething_pQGFYdwp">
+        <rdf:type rdf:resource="&knowrob;GraspingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209624.5827985"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209625.3860672"/>
+        <knowrob:nextAction rdf:resource="&labels;PouringSomethingOnto_sVympdPl"/>
+        <knowrob:previousAction rdf:resource="&labels;PuttingSomethingSomewhere_ock4LbBQ"/>
+        <knowrob:objectActedOn rdf:resource="&labels;smallRedCup2_feDa5geCRGasVB"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#OpeningSomething_mfGrR5K7 -->
+
+    <owl:NamedIndividual rdf:about="&labels;OpeningSomething_mfGrR5K7">
+        <rdf:type rdf:resource="&knowrob;OpeningSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209640.6116579"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209642.3642437"/>
+        <knowrob:nextAction rdf:resource="&labels;Walking-Generic_Fk3Ox82j"/>
+        <knowrob:previousAction rdf:resource="&labels;Walking-Generic_KzVDN8q3"/>
+        <knowrob:objectActedOn rdf:resource="&map;drawer_oven_middle"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PickingUpAnObject_6RJ7jh99 -->
+
+    <owl:NamedIndividual rdf:about="&labels;PickingUpAnObject_6RJ7jh99">
+        <rdf:type rdf:resource="&knowrob;PickingUpAnObject"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209632.761533"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209636.5588028"/>
+        <knowrob:previousAction rdf:resource="&labels;GraspingSomething_jgLyq11Z"/>
+        <knowrob:nextAction rdf:resource="&labels;PuttingSomethingSomewhere_7IM7BGPh"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PickingUpAnObject_RX7FsHsa -->
+
+    <owl:NamedIndividual rdf:about="&labels;PickingUpAnObject_RX7FsHsa">
+        <rdf:type rdf:resource="&knowrob;PickingUpAnObject"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209644.518464"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209645.029635"/>
+        <knowrob:nextAction rdf:resource="&labels;CarryingWhileLocomoting_ktJRFWi0"/>
+        <knowrob:previousAction rdf:resource="&labels;GraspingSomething_6pLZ58rS"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PickingUpAnObject_zhsiMmmw -->
+
+    <owl:NamedIndividual rdf:about="&labels;PickingUpAnObject_zhsiMmmw">
+        <rdf:type rdf:resource="&knowrob;PickingUpAnObject"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209580.914198"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209581.4618812"/>
+        <knowrob:previousAction rdf:resource="&labels;GraspingSomething_NNAr5T1Y"/>
+        <knowrob:nextAction rdf:resource="&labels;TakingSomething_DeNMQa6W"/>
+        <knowrob:fromLocation rdf:resource="&map;kitchen_island_counter_top"/>
+        <knowrob:objectActedOn rdf:resource="&labels;spoon_Jdna8auH73bCMC"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PouringSomethingOnto_0pWX9jWR -->
+
+    <owl:NamedIndividual rdf:about="&labels;PouringSomethingOnto_0pWX9jWR">
+        <rdf:type rdf:resource="&knowrob;PouringSomethingOnto"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209598.7321553"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209599.8275216"/>
+        <knowrob:previousAction rdf:resource="&labels;TakingSomething_ZLmH805Z"/>
+        <knowrob:nextAction rdf:resource="&labels;TakingSomething_pDVOLoFV"/>
+        <knowrob:objectActedOn rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
+        <knowrob:toLocation rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PouringSomethingOnto_3p5NlWJW -->
+
+    <owl:NamedIndividual rdf:about="&labels;PouringSomethingOnto_3p5NlWJW">
+        <rdf:type rdf:resource="&knowrob;PouringSomethingOnto"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209610.1239643"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209611.6939893"/>
+        <knowrob:nextAction rdf:resource="&labels;SpreadingOntoSurface_70siGk1e"/>
+        <knowrob:previousAction rdf:resource="&labels;TakingSomething_9QeiNI5z"/>
+        <knowrob:objectActedOn rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
+        <knowrob:toLocation rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PouringSomethingOnto_5gVFNJSw -->
+
+    <owl:NamedIndividual rdf:about="&labels;PouringSomethingOnto_5gVFNJSw">
+        <rdf:type rdf:resource="&knowrob;PouringSomethingOnto"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209620.0552847"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209622.9762614"/>
+        <knowrob:previousAction rdf:resource="&labels;GraspingSomething_bKDWRzec"/>
+        <knowrob:nextAction rdf:resource="&labels;PuttingSomethingSomewhere_ock4LbBQ"/>
+        <knowrob:objectActedOn rdf:resource="&labels;onion_Jam39adKAme1Aa"/>
+        <knowrob:toLocation rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PouringSomethingOnto_6nzFMR8W -->
+
+    <owl:NamedIndividual rdf:about="&labels;PouringSomethingOnto_6nzFMR8W">
+        <rdf:type rdf:resource="&knowrob;PouringSomethingOnto"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209604.0629377"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209605.523426"/>
+        <knowrob:previousAction rdf:resource="&labels;TakingSomething_B8wlMMPJ"/>
+        <knowrob:nextAction rdf:resource="&labels;TakingSomething_I7KUKdyQ"/>
+        <knowrob:objectActedOn rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
+        <knowrob:toLocation rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PouringSomethingOnto_BMom4nch -->
+
+    <owl:NamedIndividual rdf:about="&labels;PouringSomethingOnto_BMom4nch">
+        <rdf:type rdf:resource="&knowrob;PouringSomethingOnto"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209583.7621503"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209585.2591507"/>
+        <knowrob:nextAction rdf:resource="&labels;SpreadingOntoSurface_tn6T2Ewx"/>
+        <knowrob:previousAction rdf:resource="&labels;TakingSomething_DeNMQa6W"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tomatoSauce_JameUd81KmdE18"/>
+        <knowrob:toLocation rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PouringSomethingOnto_U3Lv2TLf -->
+
+    <owl:NamedIndividual rdf:about="&labels;PouringSomethingOnto_U3Lv2TLf">
+        <rdf:type rdf:resource="&knowrob;PouringSomethingOnto"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209614.0672827"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209615.7468443"/>
+        <knowrob:nextAction rdf:resource="&labels;PuttingSomethingSomewhere_JVFHmjc0"/>
+        <knowrob:previousAction rdf:resource="&labels;TakingSomething_SXTLASsk"/>
+        <knowrob:objectActedOn rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
+        <knowrob:toLocation rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PouringSomethingOnto_V4ymthbS -->
+
+    <owl:NamedIndividual rdf:about="&labels;PouringSomethingOnto_V4ymthbS">
+        <rdf:type rdf:resource="&knowrob;PouringSomethingOnto"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209591.612275"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209592.4155436"/>
+        <knowrob:nextAction rdf:resource="&labels;SpreadingOntoSurface_8h8JKSDz"/>
+        <knowrob:previousAction rdf:resource="&labels;TakingSomething_MyrqojzN"/>
+        <knowrob:toLocation rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tomatoSauce_JameUd81KmdE18"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PouringSomethingOnto_WDtNYt31 -->
+
+    <owl:NamedIndividual rdf:about="&labels;PouringSomethingOnto_WDtNYt31">
+        <rdf:type rdf:resource="&knowrob;PouringSomethingOnto"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209595.519081"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209596.5049107"/>
+        <knowrob:nextAction rdf:resource="&labels;SpreadingOntoSurface_prtj8xEN"/>
+        <knowrob:previousAction rdf:resource="&labels;TakingSomething_BVJee0Bo"/>
+        <knowrob:toLocation rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tomatoSauce_JameUd81KmdE18"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PouringSomethingOnto_d2QK01Sf -->
+
+    <owl:NamedIndividual rdf:about="&labels;PouringSomethingOnto_d2QK01Sf">
+        <rdf:type rdf:resource="&knowrob;PouringSomethingOnto"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209600.9594002"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209602.1643028"/>
+        <knowrob:nextAction rdf:resource="&labels;TakingSomething_B8wlMMPJ"/>
+        <knowrob:previousAction rdf:resource="&labels;TakingSomething_pDVOLoFV"/>
+        <knowrob:objectActedOn rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
+        <knowrob:toLocation rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PouringSomethingOnto_ocpJwohw -->
+
+    <owl:NamedIndividual rdf:about="&labels;PouringSomethingOnto_ocpJwohw">
+        <rdf:type rdf:resource="&knowrob;PouringSomethingOnto"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209607.1664753"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209608.6269636"/>
+        <knowrob:nextAction rdf:resource="&labels;TakingSomething_9QeiNI5z"/>
+        <knowrob:previousAction rdf:resource="&labels;TakingSomething_I7KUKdyQ"/>
+        <knowrob:objectActedOn rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
+        <knowrob:toLocation rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PouringSomethingOnto_sVympdPl -->
+
+    <owl:NamedIndividual rdf:about="&labels;PouringSomethingOnto_sVympdPl">
+        <rdf:type rdf:resource="&knowrob;PouringSomethingOnto"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209625.4225793"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209628.343556"/>
+        <knowrob:previousAction rdf:resource="&labels;GraspingSomething_pQGFYdwp"/>
+        <knowrob:nextAction rdf:resource="&labels;PuttingSomethingSomewhere_JEAhA2UQ"/>
+        <knowrob:objectActedOn rdf:resource="&labels;bacon_OAJe81c71DmaEg"/>
+        <knowrob:toLocation rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PuttingSomethingSomewhere_7IM7BGPh -->
+
+    <owl:NamedIndividual rdf:about="&labels;PuttingSomethingSomewhere_7IM7BGPh">
+        <rdf:type rdf:resource="&knowrob;PuttingSomethingSomewhere"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209636.595315"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209639.0051208"/>
+        <knowrob:previousAction rdf:resource="&labels;PickingUpAnObject_6RJ7jh99"/>
+        <knowrob:nextAction rdf:resource="&labels;Walking-Generic_KzVDN8q3"/>
+        <knowrob:toLocation rdf:resource="&map;kitchen_island_counter_top"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PuttingSomethingSomewhere_JEAhA2UQ -->
+
+    <owl:NamedIndividual rdf:about="&labels;PuttingSomethingSomewhere_JEAhA2UQ">
+        <rdf:type rdf:resource="&knowrob;PuttingSomethingSomewhere"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209628.380068"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209631.2645326"/>
+        <knowrob:nextAction rdf:resource="&labels;GraspingSomething_jgLyq11Z"/>
+        <knowrob:previousAction rdf:resource="&labels;PouringSomethingOnto_sVympdPl"/>
+        <knowrob:toLocation rdf:resource="&map;kitchen_island_counter_top"/>
+        <knowrob:objectActedOn rdf:resource="&labels;smallRedCup2_feDa5geCRGasVB"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PuttingSomethingSomewhere_JVFHmjc0 -->
+
+    <owl:NamedIndividual rdf:about="&labels;PuttingSomethingSomewhere_JVFHmjc0">
+        <rdf:type rdf:resource="&knowrob;PuttingSomethingSomewhere"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209615.7833564"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209618.3026989"/>
+        <knowrob:nextAction rdf:resource="&labels;GraspingSomething_bKDWRzec"/>
+        <knowrob:previousAction rdf:resource="&labels;PouringSomethingOnto_U3Lv2TLf"/>
+        <knowrob:toLocation rdf:resource="&map;kitchen_island_counter_top"/>
+        <knowrob:objectActedOn rdf:resource="&labels;spoon_Jdna8auH73bCMC"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PuttingSomethingSomewhere_KsgcJzNH -->
+
+    <owl:NamedIndividual rdf:about="&labels;PuttingSomethingSomewhere_KsgcJzNH">
+        <rdf:type rdf:resource="&knowrob;PuttingSomethingSomewhere"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209647.0743186"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209649.5206366"/>
+        <knowrob:previousAction rdf:resource="&labels;CarryingWhileLocomoting_ktJRFWi0"/>
+        <knowrob:nextAction rdf:resource="&labels;ClosingSomething_Tj3wEuvZ"/>
+        <knowrob:toLocation rdf:resource="&map;drawer_oven_middle"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PuttingSomethingSomewhere_ock4LbBQ -->
+
+    <owl:NamedIndividual rdf:about="&labels;PuttingSomethingSomewhere_ock4LbBQ">
+        <rdf:type rdf:resource="&knowrob;PuttingSomethingSomewhere"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209623.0127735"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209624.5462863"/>
+        <knowrob:nextAction rdf:resource="&labels;GraspingSomething_pQGFYdwp"/>
+        <knowrob:previousAction rdf:resource="&labels;PouringSomethingOnto_5gVFNJSw"/>
+        <knowrob:toLocation rdf:resource="&map;kitchen_island_counter_top"/>
+        <knowrob:objectActedOn rdf:resource="&labels;smallRedCup1_2ecD3otVRyYGYQ"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#SpreadingOntoSurface_70siGk1e -->
+
+    <owl:NamedIndividual rdf:about="&labels;SpreadingOntoSurface_70siGk1e">
+        <rdf:type rdf:resource="&knowrob;SpreadingOntoSurface"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209611.7305014"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209612.6067944"/>
+        <knowrob:previousAction rdf:resource="&labels;PouringSomethingOnto_3p5NlWJW"/>
+        <knowrob:nextAction rdf:resource="&labels;TakingSomething_SXTLASsk"/>
+        <knowrob:objectActedOn rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
+        <knowrob:toLocation rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#SpreadingOntoSurface_8h8JKSDz -->
+
+    <owl:NamedIndividual rdf:about="&labels;SpreadingOntoSurface_8h8JKSDz">
+        <rdf:type rdf:resource="&knowrob;SpreadingOntoSurface"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209592.4520557"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209594.2046416"/>
+        <knowrob:previousAction rdf:resource="&labels;PouringSomethingOnto_V4ymthbS"/>
+        <knowrob:nextAction rdf:resource="&labels;TakingSomething_BVJee0Bo"/>
+        <knowrob:toLocation rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tomatoSauce_JameUd81KmdE18"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#SpreadingOntoSurface_cRw6G1PV -->
+
+    <owl:NamedIndividual rdf:about="&labels;SpreadingOntoSurface_cRw6G1PV">
+        <rdf:type rdf:resource="&knowrob;SpreadingOntoSurface"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209588.0340786"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209590.1882987"/>
+        <knowrob:nextAction rdf:resource="&labels;TakingSomething_MyrqojzN"/>
+        <knowrob:previousAction rdf:resource="&labels;TakingSomething_QSLOStQS"/>
+        <knowrob:toLocation rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tomatoSauce_JameUd81KmdE18"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#SpreadingOntoSurface_prtj8xEN -->
+
+    <owl:NamedIndividual rdf:about="&labels;SpreadingOntoSurface_prtj8xEN">
+        <rdf:type rdf:resource="&knowrob;SpreadingOntoSurface"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209596.5414228"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209596.9795694"/>
+        <knowrob:previousAction rdf:resource="&labels;PouringSomethingOnto_WDtNYt31"/>
+        <knowrob:nextAction rdf:resource="&labels;TakingSomething_ZLmH805Z"/>
+        <knowrob:toLocation rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tomatoSauce_JameUd81KmdE18"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#SpreadingOntoSurface_tn6T2Ewx -->
+
+    <owl:NamedIndividual rdf:about="&labels;SpreadingOntoSurface_tn6T2Ewx">
+        <rdf:type rdf:resource="&knowrob;SpreadingOntoSurface"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209585.2956629"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209586.6466146"/>
+        <knowrob:previousAction rdf:resource="&labels;PouringSomethingOnto_BMom4nch"/>
+        <knowrob:nextAction rdf:resource="&labels;TakingSomething_QSLOStQS"/>
+        <knowrob:toLocation rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tomatoSauce_JameUd81KmdE18"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#TakingSomething_9QeiNI5z -->
+
+    <owl:NamedIndividual rdf:about="&labels;TakingSomething_9QeiNI5z">
+        <rdf:type rdf:resource="&knowrob;TakingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209608.663476"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209610.087452"/>
+        <knowrob:nextAction rdf:resource="&labels;PouringSomethingOnto_3p5NlWJW"/>
+        <knowrob:previousAction rdf:resource="&labels;PouringSomethingOnto_ocpJwohw"/>
+        <knowrob:objectActedOn rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
+        <knowrob:fromLocation rdf:resource="&labels;yellowBowl_mdJa91KdAoemAN"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#TakingSomething_B8wlMMPJ -->
+
+    <owl:NamedIndividual rdf:about="&labels;TakingSomething_B8wlMMPJ">
+        <rdf:type rdf:resource="&knowrob;TakingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209602.2008152"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209604.0264256"/>
+        <knowrob:nextAction rdf:resource="&labels;PouringSomethingOnto_6nzFMR8W"/>
+        <knowrob:previousAction rdf:resource="&labels;PouringSomethingOnto_d2QK01Sf"/>
+        <knowrob:objectActedOn rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
+        <knowrob:fromLocation rdf:resource="&labels;yellowBowl_mdJa91KdAoemAN"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#TakingSomething_BVJee0Bo -->
+
+    <owl:NamedIndividual rdf:about="&labels;TakingSomething_BVJee0Bo">
+        <rdf:type rdf:resource="&knowrob;TakingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209594.2411537"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209595.482569"/>
+        <knowrob:nextAction rdf:resource="&labels;PouringSomethingOnto_WDtNYt31"/>
+        <knowrob:previousAction rdf:resource="&labels;SpreadingOntoSurface_8h8JKSDz"/>
+        <knowrob:fromLocation rdf:resource="&labels;redBowl_Jame81dDNMAkeC"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tomatoSauce_JameUd81KmdE18"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#TakingSomething_DeNMQa6W -->
+
+    <owl:NamedIndividual rdf:about="&labels;TakingSomething_DeNMQa6W">
+        <rdf:type rdf:resource="&knowrob;TakingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209581.4983933"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209583.725638"/>
+        <knowrob:previousAction rdf:resource="&labels;PickingUpAnObject_zhsiMmmw"/>
+        <knowrob:nextAction rdf:resource="&labels;PouringSomethingOnto_BMom4nch"/>
+        <knowrob:fromLocation rdf:resource="&labels;redBowl_Jame81dDNMAkeC"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tomatoSauce_JameUd81KmdE18"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#TakingSomething_I7KUKdyQ -->
+
+    <owl:NamedIndividual rdf:about="&labels;TakingSomething_I7KUKdyQ">
+        <rdf:type rdf:resource="&knowrob;TakingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209605.5599382"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209607.1299632"/>
+        <knowrob:previousAction rdf:resource="&labels;PouringSomethingOnto_6nzFMR8W"/>
+        <knowrob:nextAction rdf:resource="&labels;PouringSomethingOnto_ocpJwohw"/>
+        <knowrob:objectActedOn rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
+        <knowrob:fromLocation rdf:resource="&labels;yellowBowl_mdJa91KdAoemAN"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#TakingSomething_MyrqojzN -->
+
+    <owl:NamedIndividual rdf:about="&labels;TakingSomething_MyrqojzN">
+        <rdf:type rdf:resource="&knowrob;TakingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209590.224811"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209591.5757627"/>
+        <knowrob:nextAction rdf:resource="&labels;PouringSomethingOnto_V4ymthbS"/>
+        <knowrob:previousAction rdf:resource="&labels;SpreadingOntoSurface_cRw6G1PV"/>
+        <knowrob:fromLocation rdf:resource="&labels;redBowl_Jame81dDNMAkeC"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tomatoSauce_JameUd81KmdE18"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#TakingSomething_QSLOStQS -->
+
+    <owl:NamedIndividual rdf:about="&labels;TakingSomething_QSLOStQS">
+        <rdf:type rdf:resource="&knowrob;TakingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209586.6831267"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209587.9975662"/>
+        <knowrob:nextAction rdf:resource="&labels;SpreadingOntoSurface_cRw6G1PV"/>
+        <knowrob:previousAction rdf:resource="&labels;SpreadingOntoSurface_tn6T2Ewx"/>
+        <knowrob:fromLocation rdf:resource="&labels;redBowl_Jame81dDNMAkeC"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tomatoSauce_JameUd81KmdE18"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#TakingSomething_SXTLASsk -->
+
+    <owl:NamedIndividual rdf:about="&labels;TakingSomething_SXTLASsk">
+        <rdf:type rdf:resource="&knowrob;TakingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209612.6433065"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209614.0307705"/>
+        <knowrob:nextAction rdf:resource="&labels;PouringSomethingOnto_U3Lv2TLf"/>
+        <knowrob:previousAction rdf:resource="&labels;SpreadingOntoSurface_70siGk1e"/>
+        <knowrob:objectActedOn rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
+        <knowrob:fromLocation rdf:resource="&labels;yellowBowl_mdJa91KdAoemAN"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#TakingSomething_ZLmH805Z -->
+
+    <owl:NamedIndividual rdf:about="&labels;TakingSomething_ZLmH805Z">
+        <rdf:type rdf:resource="&knowrob;TakingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209597.0160816"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209598.6956432"/>
+        <knowrob:nextAction rdf:resource="&labels;PouringSomethingOnto_0pWX9jWR"/>
+        <knowrob:previousAction rdf:resource="&labels;SpreadingOntoSurface_prtj8xEN"/>
+        <knowrob:objectActedOn rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
+        <knowrob:fromLocation rdf:resource="&labels;yellowBowl_mdJa91KdAoemAN"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#TakingSomething_pDVOLoFV -->
+
+    <owl:NamedIndividual rdf:about="&labels;TakingSomething_pDVOLoFV">
+        <rdf:type rdf:resource="&knowrob;TakingSomething"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209599.864034"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209600.9228878"/>
+        <knowrob:previousAction rdf:resource="&labels;PouringSomethingOnto_0pWX9jWR"/>
+        <knowrob:nextAction rdf:resource="&labels;PouringSomethingOnto_d2QK01Sf"/>
+        <knowrob:objectActedOn rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
+        <knowrob:fromLocation rdf:resource="&labels;yellowBowl_mdJa91KdAoemAN"/>
+        <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Walking-Generic_Fk3Ox82j -->
+
+    <owl:NamedIndividual rdf:about="&labels;Walking-Generic_Fk3Ox82j">
+        <rdf:type rdf:resource="&knowrob;Walking-Generic"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209642.400756"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209643.7517078"/>
+        <knowrob:nextAction rdf:resource="&labels;GraspingSomething_6pLZ58rS"/>
+        <knowrob:previousAction rdf:resource="&labels;OpeningSomething_mfGrR5K7"/>
+        <knowrob:toLocation rdf:resource="&map;kitchen_island_counter_top"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Walking-Generic_KzVDN8q3 -->
+
+    <owl:NamedIndividual rdf:about="&labels;Walking-Generic_KzVDN8q3">
+        <rdf:type rdf:resource="&knowrob;Walking-Generic"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209639.041633"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209640.5751457"/>
+        <knowrob:nextAction rdf:resource="&labels;OpeningSomething_mfGrR5K7"/>
+        <knowrob:previousAction rdf:resource="&labels;PuttingSomethingSomewhere_7IM7BGPh"/>
+        <knowrob:toLocation rdf:resource="&map;drawer_oven_middle"/>
+    </owl:NamedIndividual>
+
+    
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_AKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:perceptionResult rdf:resource="&labels;smallRedCup1_2ecD3otVRyYGYQ"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_BKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:perceptionResult rdf:resource="&labels;smallRedCup2_feDa5geCRGasVB"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_CKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:perceptionResult rdf:resource="&labels;spoon_Jdna8auH73bCMC"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_DKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:perceptionResult rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_EKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:perceptionResult rdf:resource="&labels;redBowl_Jame81dDNMAkeC"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_FKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:perceptionResult rdf:resource="&labels;yellowBowl_mdJa91KdAoemAN"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_GKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:perceptionResult rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_HKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:perceptionResult rdf:resource="&labels;onion_Jam39adKAme1Aa"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_IKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:perceptionResult rdf:resource="&labels;bacon_OAJe81c71DmaEg"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_JKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:perceptionResult rdf:resource="&labels;tomatoSauce_JameUd81KmdE18"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_KKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:perceptionResult rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="&labels;object_smallRedCup1_2ecD3otVRyYGYQ">
+        <rdf:type rdf:resource="&knowrob;HumanScaleObject"/>
+        <knowrob:designator rdf:resource="&labels;smallRedCup1_2ecD3otVRyYGYQ"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;object_smallRedCup2_feDa5geCRGasVB">
+        <rdf:type rdf:resource="&knowrob;HumanScaleObject"/>
+        <knowrob:designator rdf:resource="&labels;smallRedCup2_feDa5geCRGasVB"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;object_spoon_Jdna8auH73bCMC">
+        <rdf:type rdf:resource="&knowrob;HumanScaleObject"/>
+        <knowrob:designator rdf:resource="&labels;spoon_Jdna8auH73bCMC"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;object_tray_JKdma8aduNdkOM">
+        <rdf:type rdf:resource="&knowrob;HumanScaleObject"/>
+        <knowrob:designator rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;object_redBowl_Jame81dDNMAkeC">
+        <rdf:type rdf:resource="&knowrob;HumanScaleObject"/>
+        <knowrob:designator rdf:resource="&labels;redBowl_Jame81dDNMAkeC"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;object_yellowBowl_mdJa91KdAoemAN">
+        <rdf:type rdf:resource="&knowrob;HumanScaleObject"/>
+        <knowrob:designator rdf:resource="&labels;yellowBowl_mdJa91KdAoemAN"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;object_cheese_Iuad8anDKa27op">
+        <rdf:type rdf:resource="&knowrob;HumanScaleObject"/>
+        <knowrob:designator rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;object_onion_Jam39adKAme1Aa">
+        <rdf:type rdf:resource="&knowrob;HumanScaleObject"/>
+        <knowrob:designator rdf:resource="&labels;onion_Jam39adKAme1Aa"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;object_bacon_OAJe81c71DmaEg">
+        <rdf:type rdf:resource="&knowrob;HumanScaleObject"/>
+        <knowrob:designator rdf:resource="&labels;bacon_OAJe81c71DmaEg"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;object_tomatoSauce_JameUd81KmdE18">
+        <rdf:type rdf:resource="&knowrob;HumanScaleObject"/>
+        <knowrob:designator rdf:resource="&labels;tomatoSauce_JameUd81KmdE18"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;object_pizza_AleMDa28D1Kmvc">
+        <rdf:type rdf:resource="&knowrob;HumanScaleObject"/>
+        <knowrob:designator rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+    </owl:NamedIndividual>
+
+
+
+
+
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209572.8815122 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209572.8815122">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209579.7823195 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209579.7823195">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209579.8188317 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209579.8188317">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209580.8776858 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209580.8776858">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209580.914198 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209580.914198">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209581.4618812 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209581.4618812">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209581.4983933 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209581.4983933">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209583.725638 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209583.725638">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209583.7621503 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209583.7621503">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209585.2591507 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209585.2591507">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209585.2956629 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209585.2956629">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209586.6466146 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209586.6466146">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209586.6831267 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209586.6831267">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209587.9975662 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209587.9975662">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209588.0340786 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209588.0340786">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209590.1882987 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209590.1882987">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209590.224811 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209590.224811">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209591.5757627 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209591.5757627">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209591.612275 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209591.612275">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209592.4155436 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209592.4155436">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209592.4520557 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209592.4520557">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209594.2046416 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209594.2046416">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209594.2411537 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209594.2411537">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209595.482569 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209595.482569">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209595.519081 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209595.519081">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209596.5049107 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209596.5049107">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209596.5414228 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209596.5414228">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209596.9795694 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209596.9795694">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209597.0160816 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209597.0160816">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209598.6956432 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209598.6956432">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209598.7321553 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209598.7321553">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209599.8275216 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209599.8275216">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209599.864034 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209599.864034">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209600.9228878 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209600.9228878">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209600.9594002 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209600.9594002">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209602.1643028 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209602.1643028">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209602.2008152 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209602.2008152">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209604.0264256 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209604.0264256">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209604.0629377 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209604.0629377">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209605.523426 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209605.523426">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209605.5599382 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209605.5599382">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209607.1299632 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209607.1299632">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209607.1664753 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209607.1664753">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209608.6269636 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209608.6269636">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209608.663476 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209608.663476">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209610.087452 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209610.087452">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209610.1239643 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209610.1239643">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209611.6939893 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209611.6939893">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209611.7305014 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209611.7305014">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209612.6067944 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209612.6067944">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209612.6433065 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209612.6433065">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209614.0307705 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209614.0307705">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209614.0672827 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209614.0672827">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209615.7468443 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209615.7468443">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209615.7833564 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209615.7833564">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209618.3026989 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209618.3026989">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209618.339211 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209618.339211">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209620.0187726 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209620.0187726">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209620.0552847 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209620.0552847">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209622.9762614 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209622.9762614">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209623.0127735 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209623.0127735">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209624.5462863 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209624.5462863">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209624.5827985 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209624.5827985">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209625.3860672 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209625.3860672">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209625.4225793 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209625.4225793">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209628.343556 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209628.343556">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209628.380068 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209628.380068">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209631.2645326 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209631.2645326">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209631.3010447 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209631.3010447">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209632.725021 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209632.725021">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209632.761533 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209632.761533">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209636.5588028 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209636.5588028">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209636.595315 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209636.595315">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209639.0051208 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209639.0051208">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209639.041633 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209639.041633">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209640.5751457 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209640.5751457">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209640.6116579 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209640.6116579">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209642.3642437 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209642.3642437">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209642.400756 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209642.400756">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209643.7517078 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209643.7517078">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209643.78822 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209643.78822">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209644.481952 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209644.481952">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209644.518464 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209644.518464">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209645.029635 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209645.029635">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209645.066147 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209645.066147">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209647.0378065 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209647.0378065">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209647.0743186 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209647.0743186">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209649.5206366 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209649.5206366">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209649.5571487 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209649.5571487">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209650.9081004 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209650.9081004">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209650.9446127 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209650.9446127">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/labels.owl#timepoint_1430209656.6770294 -->
+
+    <owl:NamedIndividual rdf:about="&labels;timepoint_1430209656.6770294">
+        <rdf:type rdf:resource="&knowrob;TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+    <!-- http://knowrob.org/kb/knowrob.owl#bacon_OAJe81c71DmaEg -->
+
+    <owl:NamedIndividual rdf:about="&labels;bacon_OAJe81c71DmaEg">
+        <rdf:type rdf:resource="&knowrob;Bacon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#cheese_Iuad8anDKa27op -->
+
+    <owl:NamedIndividual rdf:about="&labels;cheese_Iuad8anDKa27op">
+        <rdf:type rdf:resource="&knowrob;Cheese"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#kitchen_island_counter_top -->
+
+    <!--
+    <owl:NamedIndividual rdf:about="&map;kitchen_island_counter_top">
+        <rdf:type rdf:resource="&knowrob;KitchenTable"/>
+    </owl:NamedIndividual>
+    -->
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#onion_Jam39adKAme1Aa -->
+
+    <owl:NamedIndividual rdf:about="&labels;onion_Jam39adKAme1Aa">
+        <rdf:type rdf:resource="&knowrob;Onion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#pizza_AleMDa28D1Kmvc -->
+
+    <owl:NamedIndividual rdf:about="&labels;pizza_AleMDa28D1Kmvc">
+        <rdf:type rdf:resource="&knowrob;Pizza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#redBowl_Jame81dDNMAkeC -->
+
+    <owl:NamedIndividual rdf:about="&labels;redBowl_Jame81dDNMAkeC">
+        <rdf:type rdf:resource="&knowrob;Bowl-Serving"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#drawer_oven_middle -->
+
+    <!--
+    <owl:NamedIndividual rdf:about="&map;drawer_oven_middle">
+        <rdf:type rdf:resource="&knowrob;RegularOven"/>
+    </owl:NamedIndividual>
+    -->
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#smallRedCup1_2ecD3otVRyYGYQ -->
+
+    <owl:NamedIndividual rdf:about="&labels;smallRedCup1_2ecD3otVRyYGYQ">
+        <rdf:type rdf:resource="&knowrob;Bowl-Generic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#smallRedCup2_feDa5geCRGasVB -->
+
+    <owl:NamedIndividual rdf:about="&labels;smallRedCup2_feDa5geCRGasVB">
+        <rdf:type rdf:resource="&knowrob;Bowl-Mixing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#spoon_Jdna8auH73bCMC -->
+
+    <owl:NamedIndividual rdf:about="&labels;spoon_Jdna8auH73bCMC">
+        <rdf:type rdf:resource="&knowrob;Spoon-SilverwarePiece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#tomatoSauce_JameUd81KmdE18 -->
+
+    <owl:NamedIndividual rdf:about="&labels;tomatoSauce_JameUd81KmdE18">
+        <rdf:type rdf:resource="&knowrob;TomatoSauce"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#tray_JKdma8aduNdkOM -->
+
+    <owl:NamedIndividual rdf:about="&labels;tray_JKdma8aduNdkOM">
+        <rdf:type rdf:resource="&knowrob;Tray"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#yellowBowl_mdJa91KdAoemAN -->
+
+    <owl:NamedIndividual rdf:about="&labels;yellowBowl_mdJa91KdAoemAN">
+        <rdf:type rdf:resource="&knowrob;Bowl-Eating"/>
+    </owl:NamedIndividual>
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#forth_human_left_hand -->
+
+    <!--
+    <owl:NamedIndividual rdf:about="&forthhuman;forth_human_left_hand">
+        <rdf:type rdf:resource="&knowrob;LeftHand"/>
+    </owl:NamedIndividual>
+    -->
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#forth_human_right_hand -->
+
+    <!--
+    <owl:NamedIndividual rdf:about="&forthhuman;forth_human_right_hand">
+        <rdf:type rdf:resource="&knowrob;RightHand"/>
+    </owl:NamedIndividual>
+    -->
+
+
+    <!-- Meta Data Individual -->
+
+    <owl:NamedIndividual rdf:about="&labels;RobotExperiment_wGK7XYGKCsdycxf2">
+        <rdf:type rdf:resource="&knowrob;RobotExperiment"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_AKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_BKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_CKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_DKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_EKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_FKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_GKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_HKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_IKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_JKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_KKFxyTATgcThCyxf"/>
+        <knowrob:cramSemrecVersion rdf:datatype="&xsd;string">0.4</knowrob:cramSemrecVersion>
+        <knowrob:creator rdf:datatype="&xsd;string">IAI</knowrob:creator>
+        <knowrob:description rdf:datatype="&xsd;string">Alexis preparing pizza in a dryrun</knowrob:description>
+        <knowrob:experiment rdf:datatype="&xsd;string">Pizza Making</knowrob:experiment>
+        <knowrob:experimentName rdf:datatype="&xsd;string">exp-2015-04-28_10-26-12</knowrob:experimentName>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
+    </owl:NamedIndividual>
+
+
+
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.1592) http://owlapi.sourceforge.net -->
+
