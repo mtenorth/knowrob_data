@@ -259,7 +259,8 @@
         <knowrob:previousAction rdf:resource="&labels;PickingUpAnObject_RX7FsHsa"/>
         <knowrob:nextAction rdf:resource="&labels;PuttingSomethingSomewhere_KsgcJzNH"/>
         <knowrob:toLocation rdf:resource="&map;drawer_oven_middle"/>
-        <knowrob:objectActedOn rdf:resource="&knowrob;tray_JKdma8aduNdkOM"/>
+        <knowrob:objectActedOn rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+        <knowrob:objectActedOn rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
         <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
         <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
     </owl:NamedIndividual>
@@ -287,6 +288,7 @@
         <knowrob:nextAction rdf:resource="&labels;PickingUpAnObject_RX7FsHsa"/>
         <knowrob:previousAction rdf:resource="&labels;Walking-Generic_Fk3Ox82j"/>
         <knowrob:objectActedOn rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+        <knowrob:objectActedOn rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
         <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
         <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
     </owl:NamedIndividual>
@@ -330,6 +332,7 @@
         <knowrob:nextAction rdf:resource="&labels;PickingUpAnObject_6RJ7jh99"/>
         <knowrob:previousAction rdf:resource="&labels;PuttingSomethingSomewhere_JEAhA2UQ"/>
         <knowrob:objectActedOn rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+        <knowrob:objectActedOn rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
         <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
         <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
     </owl:NamedIndividual>
@@ -373,6 +376,7 @@
         <knowrob:previousAction rdf:resource="&labels;GraspingSomething_jgLyq11Z"/>
         <knowrob:nextAction rdf:resource="&labels;PuttingSomethingSomewhere_7IM7BGPh"/>
         <knowrob:objectActedOn rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+        <knowrob:objectActedOn rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
         <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
         <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
     </owl:NamedIndividual>
@@ -388,6 +392,7 @@
         <knowrob:nextAction rdf:resource="&labels;CarryingWhileLocomoting_ktJRFWi0"/>
         <knowrob:previousAction rdf:resource="&labels;GraspingSomething_6pLZ58rS"/>
         <knowrob:objectActedOn rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+        <knowrob:objectActedOn rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
         <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
         <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
     </owl:NamedIndividual>
@@ -584,6 +589,7 @@
         <knowrob:nextAction rdf:resource="&labels;Walking-Generic_KzVDN8q3"/>
         <knowrob:toLocation rdf:resource="&map;kitchen_island_counter_top"/>
         <knowrob:objectActedOn rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+        <knowrob:objectActedOn rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
         <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
         <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
     </owl:NamedIndividual>
@@ -630,6 +636,7 @@
         <knowrob:nextAction rdf:resource="&labels;ClosingSomething_Tj3wEuvZ"/>
         <knowrob:toLocation rdf:resource="&map;drawer_oven_middle"/>
         <knowrob:objectActedOn rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+        <knowrob:objectActedOn rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
         <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_left_hand"/>
         <knowrob:bodyPartsUsed rdf:resource="&forthhuman;forth_human_right_hand"/>
     </owl:NamedIndividual>
@@ -906,7 +913,7 @@
         <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
         <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
         <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
-        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209574.8815122"/>
         <knowrob:perceptionResult rdf:resource="&labels;smallRedCup1_2ecD3otVRyYGYQ"/>
     </owl:NamedIndividual>
 
@@ -915,7 +922,7 @@
         <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
         <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
         <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
-        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209574.8815122"/>
         <knowrob:perceptionResult rdf:resource="&labels;smallRedCup2_feDa5geCRGasVB"/>
     </owl:NamedIndividual>
 
@@ -924,7 +931,7 @@
         <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
         <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
         <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
-        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209574.8815122"/>
         <knowrob:perceptionResult rdf:resource="&labels;spoon_Jdna8auH73bCMC"/>
     </owl:NamedIndividual>
 
@@ -933,7 +940,7 @@
         <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
         <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
         <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
-        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209574.8815122"/>
         <knowrob:perceptionResult rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
     </owl:NamedIndividual>
 
@@ -942,7 +949,7 @@
         <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
         <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
         <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
-        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209574.8815122"/>
         <knowrob:perceptionResult rdf:resource="&labels;redBowl_Jame81dDNMAkeC"/>
     </owl:NamedIndividual>
 
@@ -951,7 +958,7 @@
         <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
         <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
         <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
-        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209574.8815122"/>
         <knowrob:perceptionResult rdf:resource="&labels;yellowBowl_mdJa91KdAoemAN"/>
     </owl:NamedIndividual>
 
@@ -960,7 +967,7 @@
         <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
         <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
         <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
-        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209574.8815122"/>
         <knowrob:perceptionResult rdf:resource="&labels;cheese_Iuad8anDKa27op"/>
     </owl:NamedIndividual>
 
@@ -969,7 +976,7 @@
         <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
         <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
         <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
-        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209574.8815122"/>
         <knowrob:perceptionResult rdf:resource="&labels;onion_Jam39adKAme1Aa"/>
     </owl:NamedIndividual>
 
@@ -978,7 +985,7 @@
         <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
         <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
         <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
-        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209574.8815122"/>
         <knowrob:perceptionResult rdf:resource="&labels;bacon_OAJe81c71DmaEg"/>
     </owl:NamedIndividual>
 
@@ -987,7 +994,7 @@
         <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
         <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
         <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
-        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209574.8815122"/>
         <knowrob:perceptionResult rdf:resource="&labels;tomatoSauce_JameUd81KmdE18"/>
     </owl:NamedIndividual>
 
@@ -995,11 +1002,64 @@
         <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
         <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
         <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
-        <knowrob:startTime rdf:resource="&labels;timepoint_1430209572.8815122"/>
-        <knowrob:endTime rdf:resource="&labels;timepoint_1430209656.750"/>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209639.1051208"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209640.1051208"/>
         <knowrob:perceptionResult rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
     </owl:NamedIndividual>
 
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_LKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209639.1051208"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209640.1051208"/>
+        <knowrob:perceptionResult rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_MKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209618.4026989"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209619.4026989"/>
+        <knowrob:perceptionResult rdf:resource="&labels;spoon_Jdna8auH73bCMC"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_NKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209624.6462863"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209625.6462863"/>
+        <knowrob:perceptionResult rdf:resource="&labels;smallRedCup1_2ecD3otVRyYGYQ"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_OKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209631.3645326"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209632.3645326"/>
+        <knowrob:perceptionResult rdf:resource="&labels;smallRedCup2_feDa5geCRGasVB"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_PKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209649.6206366"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209650.6206366"/>
+        <knowrob:perceptionResult rdf:resource="&labels;pizza_AleMDa28D1Kmvc"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&labels;UIMAPerception_QKFxyTATgcThCyxf">
+        <rdf:type rdf:resource="&knowrob;UIMAPerception"/>
+        <knowrob:taskContext rdf:datatype="&xsd;string">UIMA-PERCEIVE</knowrob:taskContext>
+        <knowrob:taskSuccess rdf:datatype="&xsd;boolean">true</knowrob:taskSuccess>
+        <knowrob:startTime rdf:resource="&labels;timepoint_1430209649.6206366"/>
+        <knowrob:endTime rdf:resource="&labels;timepoint_1430209650.6206366"/>
+        <knowrob:perceptionResult rdf:resource="&labels;tray_JKdma8aduNdkOM"/>
+    </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="&labels;object_smallRedCup1_2ecD3otVRyYGYQ">
         <rdf:type rdf:resource="&knowrob;HumanScaleObject"/>
@@ -1938,6 +1998,12 @@
         <knowrob:subAction rdf:about="&labels;UIMAPerception_IKFxyTATgcThCyxf"/>
         <knowrob:subAction rdf:about="&labels;UIMAPerception_JKFxyTATgcThCyxf"/>
         <knowrob:subAction rdf:about="&labels;UIMAPerception_KKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_LKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_MKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_NKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_OKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_PKFxyTATgcThCyxf"/>
+        <knowrob:subAction rdf:about="&labels;UIMAPerception_QKFxyTATgcThCyxf"/>
         <knowrob:cramSemrecVersion rdf:datatype="&xsd;string">0.4</knowrob:cramSemrecVersion>
         <knowrob:creator rdf:datatype="&xsd;string">IAI</knowrob:creator>
         <knowrob:description rdf:datatype="&xsd;string">Alexis preparing pizza in a dryrun</knowrob:description>
@@ -1955,4 +2021,3 @@
 
 
 <!-- Generated by the OWL API (version 3.1.0.1592) http://owlapi.sourceforge.net -->
-
