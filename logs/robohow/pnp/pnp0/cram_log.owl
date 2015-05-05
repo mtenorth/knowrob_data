@@ -11449,12 +11449,12 @@
         <knowrob:capturedImage rdf:resource="&log;CRAMAction_4am5ZJtrV5itmphs_image_0"/>
         <knowrob:objectActedOn rdf:resource="&log;object_ALty656hU9CWAi"/>
         <knowrob:ARM>RIGHT</knowrob:ARM>
+        <knowrob:ARM>LEFT</knowrob:ARM>
         <knowrob:annotatedParameterType rdf:datatype="&xsd;string">ARM</knowrob:annotatedParameterType>
         <knowrob:_time_created>1430669171.442</knowrob:_time_created>
         <knowrob:annotatedParameterType rdf:datatype="&xsd;string">_time_created</knowrob:annotatedParameterType>
         <knowrob:parameterAnnotation rdf:resource="&log;object_mORjjY4gm0URGp"/>
         <knowrob:graspDetails rdf:resource="&log;action_5z3W5ZpIfMymi7"/>
-        <knowrob:ARM>RIGHT</knowrob:ARM>
         <knowrob:annotatedParameterType rdf:datatype="&xsd;string">ARM</knowrob:annotatedParameterType>
         <knowrob:_time_created>1430669171.502</knowrob:_time_created>
         <knowrob:annotatedParameterType rdf:datatype="&xsd;string">_time_created</knowrob:annotatedParameterType>
@@ -33243,5 +33243,74 @@
         <knowrob:annotatedParameterType rdf:datatype="&xsd;string">ANGLE-DIFFERENCE-2D</knowrob:annotatedParameterType>
         <knowrob:robot rdf:datatype="&xsd;string">PR2</knowrob:robot>
     </owl:NamedIndividual>
+    
+    <!-- Fridge door open -->
+    <owl:NamedIndividual rdf:about="&log;SemanticMapPerception_FDJKFBOS">
+        <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
+        <knowrob:eventOccursAt rdf:resource="&log;Transformation_FDJKFBOS"/>
+        <knowrob:startTime rdf:resource="&log;timepoint_1430668834.048"/>
+        <!-- <knowrob:startTime rdf:resource="&log;timepoint_1430668811"/> -->
+        <knowrob:objectActedOn rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_iai_frige_door"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="&log;Transformation_FDJKFBOS">
+        <rdf:type rdf:resource="&knowrob;Transformation"/>
+        <knowrob:quaternion rdf:datatype="&xsd;string">-0.7 0.0 0.0 0.7</knowrob:quaternion>
+        <knowrob:translation rdf:datatype="&xsd;string">1.24500 -1.36000 0.98500</knowrob:translation>
+    </owl:NamedIndividual>
+
+    <!-- Fridge door closed -->
+    <owl:NamedIndividual rdf:about="&log;SemanticMapPerception_FDJKFBOS">
+        <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
+        <knowrob:eventOccursAt rdf:resource="&log;Transformation_FDJKFBOS"/>
+        <knowrob:startTime rdf:resource="&log;timepoint_1430668843.802"/>
+        <!-- <knowrob:startTime rdf:resource="&log;timepoint_1430669004"/> -->
+        <knowrob:objectActedOn rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_iai_frige_door"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="&log;Transformation_FDJKFBOS">
+        <rdf:type rdf:resource="&knowrob;Transformation"/>
+        <knowrob:quaternion rdf:datatype="&xsd;string">0.0 0.0 0.0 1.0</knowrob:quaternion>
+        <knowrob:translation rdf:datatype="&xsd;string">1.24500 -1.36000 0.98500</knowrob:translation>
+    </owl:NamedIndividual>
+
+    <!-- Drawer open -->
+    <owl:NamedIndividual rdf:about="&log;SemanticMapPerception_GDIUFGI">
+        <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
+        <knowrob:eventOccursAt rdf:resource="&log;Transformation_GDIUFGI"/>
+        <knowrob:startTime rdf:resource="&log;timepoint_1430668538.879"/>
+        <!-- <knowrob:startTime rdf:resource="&log;timepoint_1430668562"/> -->
+        <knowrob:objectActedOn rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_upper_drawer_main"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="&log;Transformation_GDIUFGI">
+        <rdf:type rdf:resource="&knowrob;Transformation"/>
+        <knowrob:relativeTo rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#Transformation_7HUx90mA"/>
+        <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 0.000000 1.000000</knowrob:quaternion>
+        <knowrob:translation rdf:datatype="&xsd;string">1.025 0.87 0.735</knowrob:translation>
+    </owl:NamedIndividual>
+
+    <!-- Drawer closed -->
+    <owl:NamedIndividual rdf:about="&log;SemanticMapPerception_GDIUFGI">
+        <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
+        <knowrob:eventOccursAt rdf:resource="&log;Transformation_GDIUFGI"/>
+        <knowrob:startTime rdf:resource="&log;timepoint_1430668641.231"/>
+        <!-- <knowrob:startTime rdf:resource="&log;timepoint_1430668620"/> -->
+        <knowrob:objectActedOn rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_upper_drawer_main"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="&log;Transformation_GDIUFGI">
+        <rdf:type rdf:resource="&knowrob;Transformation"/>
+        <knowrob:relativeTo rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#Transformation_7HUx90mA"/>
+        <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 0.000000 1.000000</knowrob:quaternion>
+        <knowrob:translation rdf:datatype="&xsd;string">1.525 0.87 0.735</knowrob:translation>
+    </owl:NamedIndividual>
+
+
+
+<!--
+    <owl:NamedIndividual rdf:about="&log;Transformation_FDJKFBOS">
+        <rdf:type rdf:resource="&knowrob;Transformation"/>
+        <knowrob:quaternion rdf:datatype="&xsd;string">-0.7 0.0 0.0 0.7</knowrob:quaternion>
+        <knowrob:translation rdf:datatype="&xsd;string">1.80500 2.50000 0.00000</knowrob:translation>
+    </owl:NamedIndividual>
+-->
+
     
 </rdf:RDF>
